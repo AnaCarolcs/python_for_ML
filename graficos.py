@@ -45,6 +45,8 @@ plt.scatter(x,y, label = "Grafico de dispersao", color = "red", marker = ".", s 
 plt.plot(x,y, color = "green", linestyle = "--", linewidth = 2)
 plt.legend()
 plt.show()
+#plt.savefig("figura.pdf")
+#plt.savefig("figura.png", dpi=300)
 
 '''
 CORES (color)
