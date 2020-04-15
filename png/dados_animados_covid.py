@@ -41,11 +41,11 @@ for i in range(10,length+10):
     ax.legend(loc='upper left', frameon=False)
     ax.grid(axis='x')
     fig = ax.get_figure()
-    fig.savefig(f"/Users/anacarolinacarvalho/Documents/python_for_ML/{i}.png")
+    fig.savefig(f"/Users/anacarolinacarvalho/Documents/python_for_ML/png/gif/{i}.png")
 
     # Section 8 - Generating our GIF
 gif_name = 'COVID.gif'
 fps = 6
-file_list = glob.glob('/Users/anacarolinacarvalho/Documents/python_for_ML/*')
+file_list = glob.glob('/Users/anacarolinacarvalho/Documents/python_for_ML/png/gif/*')
 clip = mpy.ImageSequenceClip(file_list, fps=fps)
-clip.write_gif('{}.gif'.format(gif_name), fps=fps)
+clip.write_gif('{}'.format(gif_name), fps=fps)
