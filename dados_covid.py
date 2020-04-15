@@ -46,6 +46,8 @@ plot.text(x = covid.index[1], y = int(covid.max().max())+45000, s = "COVID-19 Ca
 plot.text(x = covid.index[1], y = int(covid.max().max())+15000, s = "For the Brazil, China, Germany, France, United Kingdom, and Canada\nIncludes Current Cases, Recoveries, and Deaths", fontsize = 16, alpha = .75)
 plot.text(x = percapita.index[1], y = -100000,s = 'datagy.io Source: https://github.com/datasets/covid-19/blob/master/data/countries-aggregated.csv', fontsize = 10)
 
+
+'''
 percapitaplot = percapita.plot(figsize=(12,8), color=list(colors.values()), linewidth=5, legend=False)
 percapitaplot.grid(color='#d4d4d4')
 percapitaplot.set_xlabel('Date')
@@ -55,6 +57,7 @@ for country in list(colors.keys()):
 percapitaplot.text(x = percapita.index[1], y = percapita.max().max()+25, s = "Per Capita COVID-19 Cases by Country", fontsize = 23, weight = 'bold', alpha = .75)
 percapitaplot.text(x = percapita.index[1], y = percapita.max().max()+10, s = "For the USA, China, Germany, France, United Kingdom, and Canada\nIncludes Current Cases, Recoveries, and Deaths", fontsize = 16, alpha = .75)
 percapitaplot.text(x = percapita.index[1], y = -55,s = 'datagy.io                      Source: https://github.com/datasets/covid-19/blob/master/data/countries-aggregated.csv', fontsize = 10)
+'''
 
 # Sectio 10 - Showing the results
 plt.show()
